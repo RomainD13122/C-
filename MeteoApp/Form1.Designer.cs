@@ -81,8 +81,7 @@ namespace MeteoApp
 
             // Panel Météo
             this.pnlWeather.BackColor = System.Drawing.Color.FromArgb(35, 35, 55);
-            this.pnlWeather.Location  = new System.Drawing.Point(0, 60);
-            this.pnlWeather.Size      = new System.Drawing.Size(570, 460);
+            this.pnlWeather.Dock      = System.Windows.Forms.DockStyle.Fill;
             this.pnlWeather.Padding   = new System.Windows.Forms.Padding(20);
 
             this.pbWeatherIcon.Location  = new System.Drawing.Point(20, 20);
@@ -92,41 +91,48 @@ namespace MeteoApp
 
             this.lblCityName.Location  = new System.Drawing.Point(115, 25);
             this.lblCityName.Size      = new System.Drawing.Size(420, 35);
+            this.lblCityName.Anchor    = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             this.lblCityName.Font      = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.lblCityName.ForeColor = System.Drawing.Color.White;
 
-            this.lblDescription.Location = new System.Drawing.Point(115, 62);
-            this.lblDescription.Size     = new System.Drawing.Size(420, 22);
-            this.lblDescription.Font     = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Italic);
-            this.lblDescription.ForeColor= System.Drawing.Color.LightSkyBlue;
+            this.lblDescription.Location  = new System.Drawing.Point(115, 62);
+            this.lblDescription.Size      = new System.Drawing.Size(420, 22);
+            this.lblDescription.Anchor    = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            this.lblDescription.Font      = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Italic);
+            this.lblDescription.ForeColor = System.Drawing.Color.LightSkyBlue;
 
             int yStart = 120;
             int yStep  = 45;
 
-            this.lblTemperature.Location = new System.Drawing.Point(20, yStart);
-            this.lblTemperature.Size     = new System.Drawing.Size(500, 35);
-            this.lblTemperature.Font     = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold);
-            this.lblTemperature.ForeColor= System.Drawing.Color.Gold;
+            this.lblTemperature.Location  = new System.Drawing.Point(20, yStart);
+            this.lblTemperature.Size      = new System.Drawing.Size(500, 35);
+            this.lblTemperature.Anchor    = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            this.lblTemperature.Font      = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold);
+            this.lblTemperature.ForeColor = System.Drawing.Color.Gold;
 
-            this.lblFeelsLike.Location   = new System.Drawing.Point(20, yStart + yStep + 10);
-            this.lblFeelsLike.Size       = new System.Drawing.Size(500, 25);
-            this.lblFeelsLike.Font       = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblFeelsLike.ForeColor  = System.Drawing.Color.LightGray;
+            this.lblFeelsLike.Location  = new System.Drawing.Point(20, yStart + yStep + 10);
+            this.lblFeelsLike.Size      = new System.Drawing.Size(500, 25);
+            this.lblFeelsLike.Anchor    = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            this.lblFeelsLike.Font      = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblFeelsLike.ForeColor = System.Drawing.Color.LightGray;
 
-            this.lblHumidity.Location    = new System.Drawing.Point(20, yStart + (yStep * 2) + 10);
-            this.lblHumidity.Size        = new System.Drawing.Size(500, 25);
-            this.lblHumidity.Font        = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblHumidity.ForeColor   = System.Drawing.Color.LightBlue;
+            this.lblHumidity.Location  = new System.Drawing.Point(20, yStart + (yStep * 2) + 10);
+            this.lblHumidity.Size      = new System.Drawing.Size(500, 25);
+            this.lblHumidity.Anchor    = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            this.lblHumidity.Font      = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblHumidity.ForeColor = System.Drawing.Color.LightBlue;
 
-            this.lblWindSpeed.Location   = new System.Drawing.Point(20, yStart + (yStep * 3) + 10);
-            this.lblWindSpeed.Size       = new System.Drawing.Size(500, 25);
-            this.lblWindSpeed.Font       = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblWindSpeed.ForeColor  = System.Drawing.Color.LightGreen;
+            this.lblWindSpeed.Location  = new System.Drawing.Point(20, yStart + (yStep * 3) + 10);
+            this.lblWindSpeed.Size      = new System.Drawing.Size(500, 25);
+            this.lblWindSpeed.Anchor    = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            this.lblWindSpeed.Font      = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblWindSpeed.ForeColor = System.Drawing.Color.LightGreen;
 
-            this.lblClouds.Location      = new System.Drawing.Point(20, yStart + (yStep * 4) + 10);
-            this.lblClouds.Size          = new System.Drawing.Size(500, 25);
-            this.lblClouds.Font          = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblClouds.ForeColor     = System.Drawing.Color.Plum;
+            this.lblClouds.Location  = new System.Drawing.Point(20, yStart + (yStep * 4) + 10);
+            this.lblClouds.Size      = new System.Drawing.Size(500, 25);
+            this.lblClouds.Anchor    = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            this.lblClouds.Font      = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblClouds.ForeColor = System.Drawing.Color.Plum;
 
             this.pnlWeather.Controls.Add(this.pbWeatherIcon);
             this.pnlWeather.Controls.Add(this.lblCityName);
@@ -139,26 +145,26 @@ namespace MeteoApp
 
             // Panel Favoris
             this.pnlFavorites.BackColor = System.Drawing.Color.FromArgb(25, 25, 40);
-            this.pnlFavorites.Location  = new System.Drawing.Point(570, 60);
-            this.pnlFavorites.Size      = new System.Drawing.Size(330, 460);
+            this.pnlFavorites.Dock      = System.Windows.Forms.DockStyle.Right;
+            this.pnlFavorites.Width     = 330;
             this.pnlFavorites.Padding   = new System.Windows.Forms.Padding(10);
 
-            this.lblFavTitle.Location   = new System.Drawing.Point(10, 10);
-            this.lblFavTitle.Size       = new System.Drawing.Size(310, 25);
-            this.lblFavTitle.Text       = "Villes favorites";
-            this.lblFavTitle.Font       = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblFavTitle.ForeColor  = System.Drawing.Color.White;
+            this.lblFavTitle.Dock      = System.Windows.Forms.DockStyle.Top;
+            this.lblFavTitle.Height    = 35;
+            this.lblFavTitle.Text      = "Villes favorites";
+            this.lblFavTitle.Font      = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblFavTitle.ForeColor = System.Drawing.Color.White;
+            this.lblFavTitle.Padding   = new System.Windows.Forms.Padding(0, 8, 0, 0);
 
-            this.lstFavorites.Location  = new System.Drawing.Point(10, 42);
-            this.lstFavorites.Size      = new System.Drawing.Size(310, 310);
-            this.lstFavorites.BackColor = System.Drawing.Color.FromArgb(40, 40, 60);
-            this.lstFavorites.ForeColor = System.Drawing.Color.White;
+            this.lstFavorites.Dock        = System.Windows.Forms.DockStyle.Fill;
+            this.lstFavorites.BackColor   = System.Drawing.Color.FromArgb(40, 40, 60);
+            this.lstFavorites.ForeColor   = System.Drawing.Color.White;
             this.lstFavorites.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lstFavorites.Font      = new System.Drawing.Font("Segoe UI", 10F);
+            this.lstFavorites.Font        = new System.Drawing.Font("Segoe UI", 10F);
             this.lstFavorites.DoubleClick += new System.EventHandler(this.lstFavorites_DoubleClick);
 
-            this.btnAddFavorite.Location  = new System.Drawing.Point(10, 365);
-            this.btnAddFavorite.Size      = new System.Drawing.Size(310, 35);
+            this.btnAddFavorite.Dock      = System.Windows.Forms.DockStyle.Bottom;
+            this.btnAddFavorite.Height    = 38;
             this.btnAddFavorite.Text      = "+ Ajouter aux favoris";
             this.btnAddFavorite.BackColor = System.Drawing.Color.FromArgb(60, 160, 80);
             this.btnAddFavorite.ForeColor = System.Drawing.Color.White;
@@ -166,8 +172,8 @@ namespace MeteoApp
             this.btnAddFavorite.Cursor    = System.Windows.Forms.Cursors.Hand;
             this.btnAddFavorite.Click    += new System.EventHandler(this.btnAddFavorite_Click);
 
-            this.btnRemoveFavorite.Location  = new System.Drawing.Point(10, 410);
-            this.btnRemoveFavorite.Size      = new System.Drawing.Size(310, 35);
+            this.btnRemoveFavorite.Dock      = System.Windows.Forms.DockStyle.Bottom;
+            this.btnRemoveFavorite.Height    = 38;
             this.btnRemoveFavorite.Text      = "− Supprimer le favori";
             this.btnRemoveFavorite.BackColor = System.Drawing.Color.FromArgb(180, 60, 60);
             this.btnRemoveFavorite.ForeColor = System.Drawing.Color.White;
@@ -175,10 +181,11 @@ namespace MeteoApp
             this.btnRemoveFavorite.Cursor    = System.Windows.Forms.Cursors.Hand;
             this.btnRemoveFavorite.Click    += new System.EventHandler(this.btnRemoveFavorite_Click);
 
-            this.pnlFavorites.Controls.Add(this.lblFavTitle);
+            // ordre important : Fill en premier (traité en dernier), Top et Bottom en dernier (traités en premier)
             this.pnlFavorites.Controls.Add(this.lstFavorites);
             this.pnlFavorites.Controls.Add(this.btnAddFavorite);
             this.pnlFavorites.Controls.Add(this.btnRemoveFavorite);
+            this.pnlFavorites.Controls.Add(this.lblFavTitle);
 
             // Barre de statut
             this.lblStatus.Dock      = System.Windows.Forms.DockStyle.Bottom;
@@ -190,8 +197,8 @@ namespace MeteoApp
             this.lblStatus.Text      = "Prêt.";
 
             // Ajout au Form
-            this.Controls.Add(this.pnlSearch);
             this.Controls.Add(this.pnlWeather);
+            this.Controls.Add(this.pnlSearch);
             this.Controls.Add(this.pnlFavorites);
             this.Controls.Add(this.lblStatus);
 
